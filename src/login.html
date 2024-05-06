@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <style>
+    main {
+      display: grid;
+      height: 100vh;
+      align-content: center;
+      justify-content: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    label {
+      flex-shrink: 0;
+      font-size: 1.25rem;
+    }
+
+    input {
+      padding: 8px;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    }
+
+    input:focus {
+      outline-color: rgb(25, 118, 210);
+      ;
+    }
+
+    button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      outline: 0px;
+      margin: 0px;
+      cursor: pointer;
+      user-select: none;
+      font-size: 0.875rem;
+      line-height: 1.75;
+      min-width: 64px;
+      padding: 5px 15px;
+      border-radius: 4px;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      border: 1px solid rgba(25, 118, 210, 0.5);
+      color: rgb(25, 118, 210);
+      background: transparent;
+    }
+
+    button:hover {
+      text-decoration: none;
+      background-color: rgba(25, 118, 210, 0.04);
+      border: 1px solid rgb(25, 118, 210);
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <form action="/api/login">
+      <div class="item">
+        <label for="user">username</label>
+        <input placeholder="please input username" type="text" name="user" id="user" required />
+      </div>
+      <button>send a verify email</button>
+    </form>
+  </main>
+</body>
+
+</html>

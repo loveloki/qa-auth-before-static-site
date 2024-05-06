@@ -1,15 +1,8 @@
-# Elysia with Bun runtime
+# simple auth warpper for static site
 
-## Getting Started
-To get started with this template, simply paste this command into your terminal:
-```bash
-bun create elysia ./elysia-example
-```
+## how to run
 
-## Development
-To start the development server run:
-```bash
-bun run dev
-```
-
-Open http://localhost:3000/ with your browser to see the result.
+1. bun install
+2. modify `.env` in `.env.local`
+3. modify `list.ts`
+4. run `bun run dev`
